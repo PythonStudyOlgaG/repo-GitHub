@@ -10,14 +10,14 @@ input_list = [2, .5, complex(5, 6), "ОФЗ-ИН " + str(52003), (100.201, 1.88)
               bytearray(15), None, [0.5, 1]]
 input_str = input("Добавить тип элемента после каждого элемента списка? Если да, введите 'Yes':\n")
 if input_str == "Yes":
-   input_bool = True
+    input_bool = True
 else:
-   input_bool = False
+    input_bool = False
+
 
 # (2) Реализовать скрипт проверки типа данных каждого элемента.
 def list_elements_type():
     """
-
     Выполняет обработку списка input_list, создает и выводит список input_list_add_type.
 
     Функция использует значения нелокальных переменных:
@@ -46,10 +46,9 @@ def list_elements_type():
         counter += 1
     return input_list_add_type
 
+
 # Опционально реализовала вывод
 list_output = list_elements_type()
 print("Исходный список:\n", input_list,
       "\nПреобразованный список:\n",
       list_output)
-
-
